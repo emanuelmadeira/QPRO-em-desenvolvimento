@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  body {
+    background-color: #0d2d78;
+  }
+  nav {
+    background-color: white;
+    color: #0d2d78;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+  }
+  
+  nav.painel {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav.painel a {
+    color: #0d2d78;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav.painel a:hover {
+    color: #0d2d78;
+  }
+  
+  nav img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .meiopagina {
+    background: url('/Images/familia-feliz-usando-o-laptop-na-sala-de-estar_107420-64020.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+  }
+  .meiopagina::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  .meiopagina-adicao{
+    position: relative;
+    z-index: 2;
+  }
+  .meiopagina h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  .meiopagina p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .meiopagina button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #0d2d78;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .secoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px 20px;
+  }
+  .secao {
+    background: white;
+    color: #0d2d78;
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    min-width: 280px;
+    max-width: 450px;
+    border-radius: 8px;
+    font-size: 18px;
+  }
+  .secao img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  .secao h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  .secao p {
+    font-size: 18px;
+  }
+  .secao button {
+    margin-top: 15px;
+    background: #0d2d78;
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  footer {
+    background-color: #0d2d78;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 16px;
+  }
+  footer a {
+    color: #ffffff;
+    text-decoration: underline;
+  }
