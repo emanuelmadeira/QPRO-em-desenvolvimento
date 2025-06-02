@@ -8,14 +8,16 @@
     background-color: #0d2d78;
   }
   nav {
-    background-color: white;
-    color: #0d2d78;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    flex-wrap: wrap;
-  }
+  background-color: white;
+  color: #0d2d78;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinha os itens à esquerda */
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+  gap: 1rem; /* Opcional: espaçamento entre os elementos */
+}
+
   
   nav.painel {
     display: flex;
