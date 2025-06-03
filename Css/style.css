@@ -15,32 +15,31 @@
   justify-content: flex-start; /* Alinha os itens à esquerda */
   padding: 1rem 2rem;
   flex-wrap: wrap;
-  gap: 1rem; /* Opcional: espaçamento entre os elementos */
+  gap: 1rem;
 }
 
-  
-  nav.painel {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  nav.painel a {
-    color: #0d2d78;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  nav.painel a:hover {
-    color: #0d2d78;
-  }
-  
-  nav img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 50%;
-  }
+.painel {
+  display: flex;
+  gap: 1rem;
+}
+
+.painel a {
+  color: #0d2d78;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.painel a:hover {
+  color: #0b1f57; /* Mudança de cor no hover (opcionalmente mais escura) */
+}
+
+nav img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
   .meiopagina {
     background: url('/QPRO-em-desenvolvimento/Images/familia-feliz-usando-o-laptop-na-sala-de-estar_107420-64020.jpg') center/cover no-repeat;
     color: white;
