@@ -127,34 +127,45 @@ nav img {
     color: #ffffff;
     text-decoration: underline;
   }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-sizing: border-box;
-  }
 
-  textarea {
-    height: 150px; /* altura maior para a caixa de texto */
-    resize: vertical; /* permite aumentar só na altura */
-  }
+.formulario-contato {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
 
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #0077ff;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-  }
+.formulario-contato label {
+  font-weight: bold;
+  color: #555;
+}
 
-  button:hover {
-    background-color: #005fcc;
-  }
+.formulario-contato input[type="text"],
+.formulario-contato input[type="email"],
+.formulario-contato input[type="tel"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.formulario-contato button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #0d2d78;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario-contato button:hover {
+  background-color: #0d2d78;
+}

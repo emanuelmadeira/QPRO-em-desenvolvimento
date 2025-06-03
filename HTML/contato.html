@@ -33,7 +33,6 @@
       <h2>Formulário de Contato</h2>
      <form action="#" class="formulario-contato">
   <label for="nome">Nome:</label><br>
-
   <input type="text" id="nome" name="nome" 
          placeholder="Digite seu nome" 
          pattern="[A-Za-zÀ-ÿ\s]+" 
@@ -41,18 +40,23 @@
          required><br><br>
 
   <label for="email">Email:</label><br>
-
-  <input type="email" id="email" name="email" required><br><br>
+  <input type="email" id="email" name="email" 
+         placeholder="Digite seu email" 
+         required><br><br>
+  
   <label for="telefone">Telefone:</label><br>
-
   <input type="tel" id="telefone" name="telefone" 
          placeholder="(99) 99999-9999" 
          pattern="\d{11}" 
          maxlength="11"
          title="Digite apenas números" 
          required><br><br>
+
   <label for="mensagem">Mensagem:</label><br>
-  <textarea id="mensagem" name="mensagem" rows="8" required></textarea><br><br>
+  <input type="text" id="mensagem" name="mensagem" 
+         placeholder="Digite sua mensagem" 
+         required><br><br>
+
   <button type="submit">Enviar</button>
 </form>
     </div>
