@@ -33,6 +33,50 @@
 .painel a:hover {
   color: #0b1f57; /* Mudança de cor no hover (opcionalmente mais escura) */
 }
+.perfil-fixo {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  display: inline-block;
+}
+
+.perfil-fixo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #0077ff;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.perfil-fixo img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Tooltip */
+.perfil-fixo .tooltip {
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 6px;
+
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 1001;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.perfil-fixo:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
 
 nav img {
   width: 50px;
@@ -129,43 +173,55 @@ nav img {
   }
 
 .formulario-contato {
-  max-width: 500px;
-  margin: 0 auto;
-  background-color: white;
-  padding: 20px;
-  border-radius: 12px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 500px;
+  margin: 20px auto;
 }
 
 .formulario-contato label {
-  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
   color: #555;
+  font-weight: 600;
 }
 
-.formulario-contato input[type="text"],
-.formulario-contato input[type="email"],
-.formulario-contato input[type="tel"] {
+.formulario-contato input {
   width: 100%;
-  padding: 12px;
-  font-size: 16px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-sizing: border-box;
-  margin-top: 5px;
+  transition: border-color 0.3s;
+}
+
+.formulario-contato input:focus {
+  border-color: #0077ff;
+  outline: none;
 }
 
 .formulario-contato button {
-  width: 100%;
-  padding: 12px;
-  font-size: 16px;
-  background-color: #0d2d78;
+  background-color: #0077ff;
   color: white;
   border: none;
+  padding: 12px 20px;
   border-radius: 8px;
   cursor: pointer;
+  font-weight: bold;
   transition: background-color 0.3s;
 }
 
 .formulario-contato button:hover {
-  background-color: #0d2d78;
+  background-color: #005fcc;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .formulario-contato {
+    padding: 20px;
+    margin: 10px;
+  }
 }

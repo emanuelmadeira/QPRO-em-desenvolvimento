@@ -15,23 +15,19 @@
     <a href="/QPRO-em-desenvolvimento/index.html">Início</a>
     <a href="/QPRO-em-desenvolvimento/HTML/servicos.html">Serviços</a>
     <a href="/QPRO-em-desenvolvimento/HTML/sobre.html">Sobre nós</a>
-    <a href="/QPRO-em-desenvolvimento/HTML/contato.html">Contato</a>
+    
+      <a href="/QPRO-em-desenvolvimento/HTML/cadastro.html" class="perfil-fixo">
+  <img src="/QPRO-em-desenvolvimento/Images/icone.perfil.png" 
+       alt="Perfil"> <span class="tooltip">Cadastre-se</span>
+</a>
   </div>
 </nav>
 
 
 
-  <section class="meiopagina">
-    <div class="meiopagina-adicao">
-      <h1>Fale Conosco</h1>
-      <p>Tem dúvidas, sugestões ou precisa de ajuda? Entre em contato com nossa equipe.</p>
-    </div>
-  </section>
+ 
 
-  <section class="secoes">
-    <div class="secao">
-      <h2>Formulário de Contato</h2>
-     <form action="#" class="formulario-contato">
+  <form action="#" class="formulario-contato">
   <label for="nome">Nome:</label><br>
   <input type="text" id="nome" name="nome" 
          placeholder="Digite seu nome" 
@@ -43,7 +39,13 @@
   <input type="email" id="email" name="email" 
          placeholder="Digite seu email" 
          required><br><br>
-  
+
+  <label for="idade">Idade:</label><br>
+  <input type="number" id="idade" name="idade" 
+         placeholder="Digite sua idade"
+         min="8" max="120" 
+         required><br><br>
+
   <label for="telefone">Telefone:</label><br>
   <input type="tel" id="telefone" name="telefone" 
          placeholder="(99) 99999-9999" 
@@ -52,21 +54,16 @@
          title="Digite apenas números" 
          required><br><br>
 
-  <label for="mensagem">Mensagem:</label><br>
-  <input type="text" id="mensagem" name="mensagem" 
-         placeholder="Digite sua mensagem" 
+  <label for="senha">Senha:</label><br>
+  <input type="password" id="senha" name="senha" 
+         placeholder="Crie uma senha"
+         minlength="8" 
+         title="A senha deve ter no mínimo 8 caracteres, com pelo menos 1 letra, 1 número e 1 caractere especial." 
+          pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&.])[A-Za-z\d@$!%*#?&.]{8,}$"
          required><br><br>
 
   <button type="submit">Enviar</button>
 </form>
-    </div>
-
-    <div class="secao">
-      <h2>Outros Canais</h2>
-      <p><strong>Email:</strong> contato@semroubo.com</p>
-      <p><strong>Instagram:</strong> <a href="#">@semroubo</a></p>
-      <p><strong>WhatsApp:</strong> (21) 99999-9999</p>
-      <img src="/QPRO-em-desenvolvimento/Images/unifoa.jpg" alt="Fale conosco">
     </div>
   </section>
 
