@@ -190,12 +190,14 @@ nav img {
 
 .formulario-contato input {
   width: 100%;
-  padding: 10px 15px;
+  padding: 15px 20px; /* aumentei o padding */
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-sizing: border-box;
   transition: border-color 0.3s;
+  height: 55px; /* <<< Aumenta a altura da caixa */
+  font-size: 21px; /* Opcional: aumenta o tamanho da letra */
 }
 
 .formulario-contato input:focus {
