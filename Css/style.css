@@ -197,7 +197,7 @@ nav img {
   box-sizing: border-box;
   transition: border-color 0.3s;
   height: 55px; /* <<< Aumenta a altura da caixa */
-  font-size: 25px; /* Opcional: aumenta o tamanho da letra */
+  font-size: 24px; /* Opcional: aumenta o tamanho da letra */
 }
 
 .formulario-contato input:focus {
