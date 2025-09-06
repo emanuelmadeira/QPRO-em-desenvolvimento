@@ -119,6 +119,16 @@ nav img {
     font-weight: bold;
     cursor: pointer;
   }
+  .meiopagina button:hover {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.5s ease;
+  
+}
   .secoes {
     display: flex;
     flex-wrap: wrap;
@@ -159,6 +169,19 @@ nav img {
     border-radius: 4px;
     font-size: 16px;
   }
+
+  .secao button:hover {
+  margin-top: 15px;
+  color: black;
+  padding: 10px 15px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: color 0.5s ease ;
+}
+
   footer {
     background-color: #0d2d78;
     color: white;
