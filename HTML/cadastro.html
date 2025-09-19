@@ -1,76 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SemRoubo - Cadastro</title>
-  <link rel="shortcut icon" href="/QPRO-em-desenvolvimento/Images/favicon_io (1)/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/Images/favicon_io (1)/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/QPRO-em-desenvolvimento/Css/style.css">
+  <link rel="stylesheet" href="/Css/style.css">
+  <script src="/script.js" defer></script>
 </head>
+
 <body>
   <nav>
-  <img src="/QPRO-em-desenvolvimento/Images/logo.jpeg" alt="">
-  <div class="painel">
-    <a href="/QPRO-em-desenvolvimento/index.html">Início</a>
-    <a href="/QPRO-em-desenvolvimento/HTML/servicos.html">Serviços</a>
-    <a href="/QPRO-em-desenvolvimento/HTML/sobre.html">Sobre nós</a>
-    
-      <a href="/QPRO-em-desenvolvimento/HTML/cadastro.html" class="perfil-fixo">
-  <img src="/QPRO-em-desenvolvimento/Images/icone.perfil.png" 
-       alt="Perfil"> <span class="tooltip">Cadastre-se</span>
-</a>
-  </div>
-</nav>
+    <img src="/Images/logo.jpeg" alt="">
+    <div class="painel">
+      <a href="/index.html">Início</a>
+      <a href="/HTML/servicos.html">Serviços</a>
+      <a href="/HTML/sobre.html">Sobre nós</a>
 
-
-
- 
-
-  <form action="#" class="formulario-contato">
-  <label for="nome">Nome:</label><br>
-  <input type="text" id="nome" name="nome" 
-         placeholder="Digite seu nome" 
-         pattern="[A-Za-zÀ-ÿ\s]+" 
-         title="Use apenas letras e espaços" 
-         required><br><br>
-
-  <label for="email">Email:</label><br>
-  <input type="email" id="email" name="email" 
-         placeholder="Digite seu email" 
-         required><br><br>
-
-  <label for="idade">Idade:</label><br>
-  <input type="number" id="idade" name="idade" 
-         placeholder="Digite sua idade"
-         min="8" max="120" 
-         required><br><br>
-
-  <label for="telefone">Telefone:</label><br>
-  <input type="tel" id="telefone" name="telefone" 
-         placeholder="(99) 99999-9999" 
-         pattern="\d{11}" 
-         maxlength="11"
-         title="Digite apenas números" 
-         required><br><br>
-
-  <label for="senha">Senha:</label><br>
-  <input type="password" id="senha" name="senha" 
-         placeholder="Crie uma senha"
-         minlength="8" 
-         title="A senha deve ter no mínimo 8 caracteres, com pelo menos 1 letra, 1 número e 1 caractere especial." 
-          pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&.])[A-Za-z\d@$!%*#?&.]{8,}$"
-         required><br><br>
-
-  <button type="submit">Enviar</button>
-</form>
+      <a href="/HTML/cadastro.html" class="perfil-fixo">
+        <img src="/Images/icone.perfil.png" alt="Perfil"> <span class="tooltip">Cadastre-se</span>
+      </a>
     </div>
-  </section>
+  </nav>
 
+  <form id="formulario" class="formulario-contato">
+
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" title="Use apenas letras e espaços"
+      required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Digite seu email" required><br><br>
+
+    <label for="datanasc">Data de Nascimento:</label><br>
+    <input type="date" id="datanasc" name="datanasc" placeholder="Digite sua idade" required><br><br>
+
+    <label for="telefone">Telefone:</label><br>
+    <input type="tel" id="telefone" name="telefone" title="Digite apenas números" maxlength="15" required><br><br>
+
+    <label for="senha">Senha:</label><br>
+    <input type="password" id="senha" name="senha" placeholder="Crie uma senha"
+      title="A senha deve ter no mínimo 8 caracteres, com pelo menos 1 letra, 1 número e 1 caractere especial."
+      required><br><br>
+
+    <button type="submit">Enviar</button>
+  </form>          
+  </div>
+  </section>
   <footer>
     <p>&copy; 2025 SemRoubo.com - Todos os direitos reservados.</p>
     <p>Desenvolvido com ❤️ por sua equipe de segurança digital.</p>
     <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
   </footer>
 </body>
+
 </html>
