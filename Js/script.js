@@ -18,6 +18,7 @@ function validarMaioridade(dataNascimento) {
     if (nascimento > hoje) {
         return false;
     }
+  
     
     // Calcula a idade
     let idade = hoje.getFullYear() - nascimento.getFullYear();
@@ -27,7 +28,9 @@ function validarMaioridade(dataNascimento) {
     if (mes < 0 || (mes === 0 && hoje.getDate() < nascimento.getDate())) {
         idade--;
     }
-    
+    if(idade > 120){
+        return false
+    }
     return idade >= 18;
 }
 
@@ -73,9 +76,9 @@ form.addEventListener("submit", e => {
         datanasc.focus();
         return;
     }
- 
+   
     if (!validarMaioridade(datanasc.value)) {
-        alert("Você deve ter mais de 18 anos para se cadastrar.");
+        alert("Você deve ter mais de 18 anos e menor que 120 anos para se cadastrar.");
         datanasc.focus();
         return;
     }
