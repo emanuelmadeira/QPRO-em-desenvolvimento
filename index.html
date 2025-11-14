@@ -11,23 +11,36 @@
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="/QPRO-em-desenvolvimento/Css/style.css">
 </head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 <body>
 
-  <nav class="bg-white">
-    <img src="/QPRO-em-desenvolvimento/Images/iconePrincipal.png" alt="">
-    <div class="painel">
-      <a href="/QPRO-em-desenvolvimento/index.html">Início</a>
-      <a href="/QPRO-em-desenvolvimento/HTML/servicos.html">Serviços</a>
-      <a href="/QPRO-em-desenvolvimento/HTML/sobre.html">Sobre nós</a>
+<nav class="navbar navbar-expand-lg bg-white px-3">
+  <img src="/QPRO-em-desenvolvimento/Images/iconePrincipal.png" alt="" class="me-3" style="height:45px;">
 
+  <!-- Botão hambúrguer do Bootstrap -->
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarConteudo">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-      <a href="/QPRO-em-desenvolvimento/HTML/cadastro.html" class="perfil-fixo">
-        <img src="/QPRO-em-desenvolvimento/Images/icone.perfil.png" alt="Perfil"> <span
-          class="tooltip">Cadastre-se</span>
-      </a>
+  <!-- Menu -->
+  <div class="collapse navbar-collapse justify-content-between" id="navbarConteudo">
+
+    <!-- Links à esquerda (desktop) -->
+    <div class="navbar-nav">
+      <a class="nav-link  fs-4" href="/QPRO-em-desenvolvimento/index.html">Início</a>
+      <a class="nav-link fs-4" href="/QPRO-em-desenvolvimento/HTML/servicos.html">Serviços</a>
+      <a class="nav-link fs-4" href="/QPRO-em-desenvolvimento/HTML/sobre.html">Sobre nós</a>
+      <a class="nav-link d-md-none fs-4" href="/QPRO-em-desenvolvimento/HTML/cadastro.html">Cadastre-se</a>
     </div>
-  </nav>
+
+    <!-- Cadastre-se à direita -->
+    <a href="/QPRO-em-desenvolvimento/HTML/cadastro.html" id="perfil-fixo" class="d-none d-md-block fs-4">
+      <img src="/QPRO-em-desenvolvimento/Images/icone.perfil.png" alt="Perfil" >
+      <span class="fs-4">Cadastre-se</span>
+    </a>
+  </div>
+</nav>
 
 
 
@@ -53,7 +66,7 @@
         🤝
       </h2>
       <p>Aqui você tem acesso à melhor comunidade, lembre-se de sempre tratar com respeito e cordialidade.</p>
-      <button class="article-button" onclick="location.href='/QPRO-em-desenvolvimento/HTML/comunidade.html'">CLIQUE
+      <button class="article-button" onclick="location.href='/HTML/comunidade.html'">CLIQUE
         AQUI</button>
       <img src="/QPRO-em-desenvolvimento/Images/pessoas-em-reuniao-no-escritorio_23-2148817009.jpg" alt="Comunidade">
     </div>

@@ -1,15 +1,15 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-  }
-  body {
-    background-color: #0d2d78;
-  }
-  nav {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  font-family: "Roboto", sans-serif !important;
+}
+body {
+  background-color: #0d2d78 !important;
+}
+.nav-link {
   background-color: white;
-  color: #0d2d78;
+  color: #0d2d78 !important;
   display: flex;
   align-items: center;
   justify-content: flex-start; /* Alinha os itens à esquerda */
@@ -18,22 +18,22 @@
   gap: 1rem;
 }
 
-.painel {
+.navbar-nav {
   display: flex;
   gap: 1rem;
 }
 
-.painel a {
+.navbar-nav .nav-link {
   color: #0d2d78;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
-.painel a:hover {
-  color: #0b1f57; /* Mudança de cor no hover (opcionalmente mais escura) */
+.navbar-nav .nav-link:hover {
+  color: #181c22; /* azul bootstrap */ /* Mudança de cor no hover (opcionalmente mais escura) */
 }
-.perfil-fixo {
+#perfil-fixo {
   position: fixed;
   top: 10px;
   right: 10px;
@@ -41,9 +41,9 @@
   display: inline-block;
 }
 
-.perfil-fixo img {
-  width: 45px;
-  height: 45px;
+#perfil-fixo img {
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   border: 2px solid #0077ff;
   object-fit: cover;
@@ -51,13 +51,13 @@
   margin: 20px;
 }
 
-.perfil-fixo img:hover {
+#perfil-fixo img:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
 
 /* Tooltip */
-.perfil-fixo .tooltip {
+#perfil-fixo .fs-4 {
   visibility: hidden;
   background-color: #333;
   color: #fff;
@@ -74,109 +74,116 @@
   transition: opacity 0.3s;
 }
 
-.perfil-fixo:hover .tooltip {
+#perfil-fixo:hover .fs-4 {
   visibility: visible;
   opacity: 1;
 }
-.imgcomtxt{
-    width: 100%;
-    border-radius: 8px;
-    margin-top: 10px;
-    align-items: center;
+.imgcomtxt {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+  align-items: center;
 }
-nav img {
+.navbar-nav img {
   width: 50px;
   height: 50px;
   object-fit: cover;
   border-radius: 50%;
 }
-  .meiopagina {
-    background: url('/QPRO-em-desenvolvimento/Images/familialaptop.jpg') center/cover no-repeat;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-    position: relative;
-  }
-  .meiopagina::after {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-  }
-  .meiopagina-adicao{
-    position: relative;
-    z-index: 2;
-  }
-  .meiopagina h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-  }
-  .meiopagina p {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-  .meiopagina button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background: #0d2d78;
-    border: none;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  .meiopagina button:hover {
+.meiopagina {
+  background: url("/QPRO-em-desenvolvimento/Images/familialaptop.jpg")
+    center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+.meiopagina::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.meiopagina-adicao {
+  position: relative;
+  z-index: 2;
+}
+.meiopagina h1 {
+  font-size: 48px !important;
+  margin-bottom: 10px;
+}
+.meiopagina p {
+  font-size: 25px !important;
+  margin-bottom: 20px;
+}
+.meiopagina button {
   padding: 10px 20px;
   font-size: 16px;
+  background: #0d2d78;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.meiopagina button:hover {
+  padding: 10px 20px;
+  font-size: 16px !important;
   border: none;
   color: black;
   font-weight: bold;
   cursor: pointer;
   transition: color 0.5s ease;
-  
 }
-  .secoes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 40px 20px;
-  }
-  .secao {
-    background: white;
-    color: #0d2d78;
-    flex: 1;
-    margin: 10px;
-    padding: 20px;
-    min-width: 280px;
-    max-width: 450px;
-    border-radius: 8px;
-    font-size: 18px;
-  }
-  .secao img {
-    width: 100%;
-    border-radius: 8px;
-    margin-top: 10px;
-  }
-  .secao h2 {
-    font-size: 26px;
-    margin-bottom: 10px;
-  }
-  .secao p {
-    font-size: 18px;
-  }
-  .secao button {
-    margin-top: 15px;
-    background: #0d2d78;
-    color: white;
-    padding: 10px 15px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 16px;
-  }
+.secoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 40px 20px;
+}
+.secao {
+  background: white;
+  color: #0d2d78;
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  min-width: 280px;
+  max-width: 450px;
+  border-radius: 8px;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif !important;
+}
+.secao img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+.secao h2 {
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif !important;
+}
+.secao p {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif !important;
+}
+.secao button {
+  margin-top: 15px;
+  background: #0d2d78;
+  color: white;
+  padding: 10px 15px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
 
-  .secao button:hover {
+.secao button:hover {
   margin-top: 15px;
   color: black;
   padding: 10px 15px;
@@ -185,27 +192,27 @@ nav img {
   cursor: pointer;
   border-radius: 4px;
   font-size: 16px;
-  transition: color 0.5s ease ;
+  transition: color 0.5s ease;
 }
 
-  footer {
-    background-color: #0d2d78;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    font-size: 16px;
-  }
-  footer a {
-    color: #ffffff;
-    text-decoration: underline;
-  }
+footer {
+  background-color: #0d2d78;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 16px;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: underline;
+}
 
 .formulario-contato {
   background-color: #fff;
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 500px;
   margin: 20px auto;
 }
