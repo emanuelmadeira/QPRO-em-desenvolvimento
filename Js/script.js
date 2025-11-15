@@ -100,3 +100,17 @@ telefone.addEventListener("input", e => {
     valor = valor.length <= 10 ? valor.replace(/(\d{2})(\d{4})(\d{0,4})/, "($1) $2-$3") : valor.replace(/(\d{2})(\d{5})(\d{0,4})/, "($1) $2-$3");
     e.target.value = valor;
 });
+
+document.getElementById("formulario").addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const nome = document.getElementById("nome").value;
+  const email = document.getElementById("email").value;
+  const telefone = document.getElementById("telefone").value;
+  const senha = document.getElementById("senha").value;
+  const datanasc = document.getElementById("datanasc").value;
+
+  const dados = { nome, email, telefone, senha, datanasc };
+
+  console.log("Dados cadastrados:", dados);
+});
